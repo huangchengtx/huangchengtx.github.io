@@ -175,6 +175,10 @@ red{
 	background-color: rgba(0,0,0,0.7);
 	padding-top: 20px;
 }
+.download{
+	/*display: inline-block;*/
+	float: right;
+}
 .width95{
 	width: 95%;
 }
