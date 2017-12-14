@@ -26,6 +26,7 @@ var swiperH = new Swiper('.swiper-container-h', {
         414: {
             slidesPerView: 1,
             spaceBetween: 20,
+            slidesPerGroup: 1,
         },
     },
     on:{
@@ -39,3 +40,4 @@ var swiperH = new Swiper('.swiper-container-h', {
     }
 });
 swiperH.pagination.bullets.css('background','#000');
+

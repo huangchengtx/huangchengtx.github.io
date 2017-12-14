@@ -176,10 +176,7 @@ red{
 	padding-top: 20px;
 }
 .width95{
-	animation: myfirst 1s;
-	-moz-animation: myfirst 1s;/* Firefox: */
-	-webkit-animation: myfirst 1s;/* Safari 和 Chrome: */
-	-o-animation: myfirst 1s;/* Opera: */
+	width: 95%;
 }
 .width90{
 	width: 90%;
@@ -196,35 +193,23 @@ red{
 .width70{
 	width: 70%;
 }
-@keyframes myfirst
-{
-	0%   {width:0%;}
-	25%  {width:24%;}
-	50%  {width:48%;}
-	75%  {width:72%;}
-	100% {width:95%;}
+@-webkit-keyframes widthIn {
+	from {
+		width: 0%;
+	}
+	to {
+		width: this.attr('class').split(' ')[0];
+	}
 }
-@-moz-keyframes myfirst /* Firefox */
-{
-	0%   {width:0%;}
-	25%  {width:24%;}
-	50%  {width:48%;}
-	75%  {width:72%;}
-	100% {width:95%;}
+@keyframes widthIn {
+	from {
+		width: 0%;
+	}
+	to {
+		width: this.attr('class').split(' ')[0];
+	}
 }
-@-webkit-keyframes myfirst /* Safari 和 Chrome */
-{
-	0%   {width:0%;}
-	25%  {width:24%;}
-	50%  {width:48%;}
-	75%  {width:72%;}
-	100% {width:95%;}
-}
-@-o-keyframes myfirst /* Opera */
-{
-	0%   {width:0%;}
-	25%  {width:24%;}
-	50%  {width:48%;}
-	75%  {width:72%;}
-	100% {width:95%;}
+.widthIn {
+	-webkit-animation-name: widthIn;
+	animation-name: widthIn;
 }
