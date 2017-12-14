@@ -37,7 +37,7 @@
 	border-bottom: 2px solid #000;
 }
 .ul{
-	border:none;
+	border: none;
 	padding-left: 0;
 	padding-right: 0;
 	margin: 0;
@@ -47,4 +47,184 @@
 }
 .table>tbody>tr>td{
 	border: none;
+}
+/*demo.htlml*/
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+.swiper-container {
+	width: 100%;
+	height: 100%;
+}
+.swiper-slide {
+	background: #c5c5bc;
+}
+.word{
+	padding: 80px 40px 0;
+}
+.word>img{
+	width: 100%;
+	display: block;
+}
+.ni{
+	background-image: url("../img/word01-dot.png");
+}
+.hao{
+	background-image: url("../img/word02-dot.png");
+}
+.shi{
+	background-image: url("../img/word03-dot.png");
+}
+.jie{
+	background-image: url("../img/word04-dot.png");
+}
+.ni,.hao,.shi,.jie{
+	height: 100%;
+	background-repeat: repeat-y;
+	background-size: 100%;
+	background-origin: content-box;
+	padding: 0 40px;
+}
+.bg2{
+	background-image: url("../img/bg2.png");
+	background-repeat: no-repeat;
+	-moz-background-size: cover;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+}
+.bg3{
+	background-image: url("../img/bg3.png");
+	background-repeat: no-repeat;
+	-moz-background-size: cover;
+	background-size: cover;
+	background-position: right;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.bg4{
+	background-image: url("../img/bg4.png");
+	background-repeat: no-repeat;
+	-moz-background-size: cover;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	font-size: 48px;
+	font-weight: bold;
+	-webkit-text-stroke: 2px #444;/*字体描边*/
+}
+red{
+	color: #F92672;
+}
+.introduction{
+	color: #fff;
+	font-weight: bold;
+	position: fixed;
+	bottom: -70%;
+	padding: 40px;
+}
+.annotation{
+	color: #75715E;
+	font-weight: bold;
+	position: fixed;
+	bottom: -100%;
+}
+.annotation a{
+	color: #75715E;
+	text-decoration: none;
+}
+.epilog{
+	background-color: rgba(255,255,255,0.7);
+	padding: 10px 20px;
+}
+.epilog span{
+	display: inline-block;
+}
+.label{
+	color: #fff;
+	font-size: 18px;
+	line-height: 50px;
+	background-color: rgba(0,0,0,0.7);
+	padding: 10px 20px;
+}
+.label a{
+	color: #fff;
+}
+.label span{
+	display: block;
+	width: 200px;
+	height: 10px;
+	border-radius: 5px;
+	background-color: rgba(255,255,255,0.3);
+}
+.label span>b{
+	display: block;
+	height: 100%;
+	border-radius: 5px;
+	background-color: #fff;
+}
+.skill{
+	font-size: 24px;
+	font-weight: bold;
+	background-color: rgba(0,0,0,0.7);
+	padding-top: 20px;
+}
+.width95{
+	animation: myfirst 1s;
+	-moz-animation: myfirst 1s;/* Firefox: */
+	-webkit-animation: myfirst 1s;/* Safari 和 Chrome: */
+	-o-animation: myfirst 1s;/* Opera: */
+}
+.width90{
+	width: 90%;
+}
+.width85{
+	width: 85%;
+}
+.width80{
+	width: 80%;
+}
+.width75{
+	width: 75%;
+}
+.width70{
+	width: 70%;
+}
+@keyframes myfirst
+{
+	0%   {width:0%;}
+	25%  {width:24%;}
+	50%  {width:48%;}
+	75%  {width:72%;}
+	100% {width:95%;}
+}
+@-moz-keyframes myfirst /* Firefox */
+{
+	0%   {width:0%;}
+	25%  {width:24%;}
+	50%  {width:48%;}
+	75%  {width:72%;}
+	100% {width:95%;}
+}
+@-webkit-keyframes myfirst /* Safari 和 Chrome */
+{
+	0%   {width:0%;}
+	25%  {width:24%;}
+	50%  {width:48%;}
+	75%  {width:72%;}
+	100% {width:95%;}
+}
+@-o-keyframes myfirst /* Opera */
+{
+	0%   {width:0%;}
+	25%  {width:24%;}
+	50%  {width:48%;}
+	75%  {width:72%;}
+	100% {width:95%;}
 }
