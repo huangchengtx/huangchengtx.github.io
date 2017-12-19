@@ -1,46 +1,53 @@
 .header{
-	padding-bottom: 20px;
+	padding: 20px 0;
 }
 .head{
-	padding: 35px 15px 0;
+	margin-top: 30px;
 }
-.head-text{
-	padding: 0;
-}
-.head-h2{
-	margin-top: 35px;
+.head-name{
+	margin-top: 30px;
 	font-weight: bold;
 }
 .img-border{
-	border: 1px solid #000;
-	margin:0 auto;
+	border: 2px solid black;
+	margin: 0 auto;
+}
+@media screen and (max-width: 414px){
+	.header{
+		display: flex;
+		align-items: center;
+	}
+	.head-name{
+		margin-top: 10px;
+	}
+	.head{
+		margin: 0;
+	}
+	.img-border{
+		border: 1px solid black;
+		margin-left: 10px;
+	}
 }
 .information{
 	padding: 0;
 }
 .information-title{
-	background-color: #000;
+	background-color: black;
 }
-.title-text1{
-	color: #fff;
-	font-size: 20px;
+.title-text{
+	font-size: 24px;
 	vertical-align: middle;
 	font-weight: bold;
+	border-bottom: 2px solid black;
 }
-.title-text2{
-	color: #000;
-	font-size: 20px;
-	vertical-align: middle;
-	font-weight: bold;
-	margin: 0;
-	padding-bottom: 10px;
-	border-bottom: 2px solid #000;
+.white{
+	color: white;
 }
-.ul{
+.black{
+	color: black;
+}
+.list-group-item{
 	border: none;
-	padding-left: 0;
-	padding-right: 0;
-	margin: 0;
 }
 .table>thead>tr>th{
 	border: none;
