@@ -8,7 +8,7 @@
         if (width > 414) { // 最大宽度
             width = 414;
         }
-        var rem = width / 7.5;
+        var rem = width / 41.4;
         docEl.style.fontSize = rem + 'px';
     }
 
